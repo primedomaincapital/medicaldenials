@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What medical claim denials cost providers — Market Data | medicaldenials.com</title>
+<meta name="description" content="Denial rates, write-offs, and revenue leakage from Kodiak revenue cycle data, MGMA polls, and hospital association figures.">
+<link rel="canonical" href="https://medicaldenials.com/market-data">
+<meta property="og:title" content="What medical claim denials cost providers — Market Data | medicaldenials.com">
+<meta property="og:description" content="Denial rates, write-offs, and revenue leakage from Kodiak revenue cycle data, MGMA polls, and hospital association figures.">
+<meta property="og:url" content="https://medicaldenials.com/market-data">
+<meta property="og:type" content="website">
+<style>
+:root{--paper:#f7f9fa;--teal:#0b3b3e;--teal2:#0e4a4e;--red:#e5484d;--red-d:#c93a3f;--ink:#10181a;--muted:#5c6f72;--line:#dde6e7}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--red);color:#fff}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px 44px;transition:all .4s}
+nav.scrolled{background:rgba(11,59,62,.94);backdrop-filter:blur(12px);padding:13px 44px}
+.brand{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.26em;color:#fff;text-transform:uppercase;text-decoration:none}
+.navlinks{display:flex;gap:32px}
+.navlinks a{color:rgba(255,255,255,.65);text-decoration:none;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;transition:color .3s}
+.navlinks a:hover{color:#fff}
+.navcta{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;background:var(--red);color:#fff;padding:12px 24px;text-decoration:none;text-transform:uppercase;transition:all .3s}
+.navcta:hover{background:var(--red-d);transform:translateY(-1px)}
+@media(max-width:860px){.navlinks{display:none}nav{padding:16px 22px}}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--teal)}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,59,62,.96) 20%,rgba(11,59,62,.72) 55%,rgba(11,59,62,.35) 100%)}
+.hero-inner{position:relative;z-index:2;padding:130px 44px 160px;max-width:1240px;width:100%}
+.alert-strip{display:inline-flex;align-items:center;gap:12px;background:rgba(229,72,77,.14);border:1px solid rgba(229,72,77,.5);padding:10px 18px;margin-bottom:30px}
+.alert-strip .dot{width:8px;height:8px;border-radius:50%;background:var(--red)}
+.alert-strip span{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#ffb4b7}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(64px,11vw,168px);line-height:.95;letter-spacing:-.03em;color:#fff}
+.hero h1 .rd{color:var(--red)}
+.hero-sub{max-width:620px;margin-top:30px;color:rgba(255,255,255,.72);font-size:clamp(16px,1.6vw,19px);line-height:1.75}
+.hero-cta{margin-top:42px;display:flex;gap:16px;flex-wrap:wrap}
+.btn-red{background:var(--red);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:19px 42px;text-decoration:none;transition:all .3s;display:inline-block}
+.btn-red:hover{background:#fff;color:var(--teal);transform:translateY(-2px)}
+.btn-line{border:1px solid rgba(255,255,255,.35);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:18px 40px;text-decoration:none;transition:all .3s}
+.btn-line:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero-ticker{margin-top:56px;display:flex;gap:44px;flex-wrap:wrap}
+.tick .k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:8px}
+.tick .v{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;color:#fff}
+.tick .v em{color:var(--red);font-style:normal}
+@media(max-width:860px){.hero-inner{padding:110px 22px 140px}}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.6,.2,1),transform .9s cubic-bezier(.2,.6,.2,1)}
+.rv.in{opacity:1;transform:none}
+.crisis{background:var(--paper);padding:130px 44px}
+.crisis-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:start}
+.sec-tag{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:22px;display:flex;align-items:center;gap:14px}
+.sec-tag::before{content:'';width:38px;height:2px;background:var(--red)}
+.crisis h2{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(34px,4.2vw,56px);line-height:1.1;letter-spacing:-.02em;margin-bottom:28px}
+.crisis p{color:var(--muted);line-height:1.85;font-size:16.5px;margin-bottom:20px}
+.crisis p strong{color:var(--ink);font-weight:600}
+.crisis-img{position:sticky;top:110px}
+.crisis-img img{width:100%;height:520px;object-fit:cover;display:block}
+.crisis-img .frame{border:1px solid var(--line);padding:14px;background:#fff}
+.img-cap{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:18px}
+@media(max-width:960px){.crisis-grid{grid-template-columns:1fr}.crisis{padding:80px 22px}.crisis-img{position:static}.crisis-img img{height:340px}}
+.numbers{background:var(--teal);padding:120px 44px;position:relative;overflow:hidden}
+.numbers-inner{max-width:1240px;margin:0 auto;position:relative;z-index:2}
+.numbers .sec-tag{color:#ffb4b7}.numbers .sec-tag::before{background:var(--red)}
+.numbers h2{font-family:'Space Grotesk',sans-serif;color:#fff;font-weight:600;font-size:clamp(32px,3.8vw,50px);margin-bottom:14px;letter-spacing:-.02em}
+.numbers .sub{color:rgba(255,255,255,.6);max-width:640px;line-height:1.8;margin-bottom:60px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);padding:44px 36px;transition:all .4s}
+.card:hover{background:rgba(255,255,255,.08);border-color:rgba(229,72,77,.6);transform:translateY(-5px)}
+.card .big{font-family:'Space Grotesk',sans-serif;font-size:clamp(48px,5vw,72px);font-weight:700;color:#fff;line-height:1;margin-bottom:14px}
+.card .big em{color:var(--red);font-style:normal}
+.card .cap{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:16px}
+.card p{color:rgba(255,255,255,.62);font-size:14.5px;line-height:1.75}
+.src{margin-top:34px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(255,255,255,.4);line-height:1.9;max-width:820px}
+@media(max-width:900px){.cards{grid-template-columns:1fr}.numbers{padding:80px 22px}}
+.strip{display:grid;grid-template-columns:1fr 1fr;height:400px}
+.strip div{background-size:cover;background-position:center}
+.strip .s1{background-image:url('images/photo-37036967.jpg')}
+.strip .s2{background-image:url('images/photo-38300969.jpg')}
+@media(max-width:860px){.strip{grid-template-columns:1fr}.strip div{height:240px}}
+.who{background:var(--paper);padding:130px 44px}
+.who-inner{max-width:1240px;margin:0 auto}
+.who h2{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(34px,4.2vw,56px);letter-spacing:-.02em;margin-bottom:16px}
+.who .sub{color:var(--muted);max-width:640px;line-height:1.8;margin-bottom:60px;font-size:16px}
+.rows{border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:120px 1fr 1fr auto;gap:36px;align-items:center;padding:38px 0;border-bottom:1px solid var(--line);transition:background .3s}
+.row:hover{background:#fff}
+.row .idx{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--red);letter-spacing:.2em}
+.row h3{font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:600}
+.row p{color:var(--muted);font-size:15px;line-height:1.7}
+.row .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);border:1px solid var(--teal);padding:10px 18px;white-space:nowrap}
+@media(max-width:900px){.row{grid-template-columns:1fr;gap:12px}.who{padding:80px 22px}}
+.cta{background:var(--ink);padding:150px 44px;text-align:center;position:relative;overflow:hidden}
+.cta-bg{position:absolute;inset:0;background:url('images/photo-21073473.jpg') center/cover;opacity:.22}
+.cta-inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
+.cta .eyebrow2{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:22px}
+.cta h2{font-family:'Space Grotesk',sans-serif;color:#fff;font-weight:700;font-size:clamp(38px,5.2vw,68px);line-height:1.05;letter-spacing:-.02em;margin-bottom:18px}
+.cta .price{font-family:'Space Grotesk',sans-serif;font-size:clamp(60px,7.5vw,100px);font-weight:700;color:#fff;margin:28px 0 6px}
+.cta .pnote{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:40px}
+.cta p.lead{color:rgba(255,255,255,.62);line-height:1.85;max-width:600px;margin:0 auto 40px}
+.trust{display:flex;justify-content:center;gap:36px;margin-top:48px;flex-wrap:wrap}
+.trust span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.trust a{color:rgba(255,255,255,.7);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+@media(max-width:860px){.cta{padding:100px 22px}}
+footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.1);padding:54px 44px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:22px}
+footer .fb{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#fff}
+footer p{color:rgba(255,255,255,.4);font-size:13px;line-height:1.8}
+footer a{color:rgba(255,255,255,.65);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
+@media(max-width:860px){footer{padding:40px 22px}}
+
+.insights{background:#fff;padding:130px 44px;border-top:1px solid var(--line)}
+.insights-inner{max-width:1240px;margin:0 auto}
+.insights h2{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(34px,4.2vw,56px);letter-spacing:-.02em;margin-bottom:16px}
+.insights-sub{color:var(--muted);max-width:640px;line-height:1.8;margin-bottom:60px;font-size:16px}
+.insight-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.icard{background:var(--paper);border:1px solid var(--line);padding:44px 36px;text-decoration:none;display:flex;flex-direction:column;transition:all .4s}
+.icard:hover{background:#fff;border-color:rgba(229,72,77,.6);transform:translateY(-5px);box-shadow:0 18px 40px rgba(11,59,62,.08)}
+.icard .ino{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.22em;color:var(--red);text-transform:uppercase;margin-bottom:20px}
+.icard h3{font-family:'Space Grotesk',sans-serif;font-size:25px;font-weight:600;color:var(--ink);line-height:1.25;margin-bottom:16px;letter-spacing:-.01em}
+.icard p{color:var(--muted);font-size:14.5px;line-height:1.75;flex:1}
+.icard .iread{margin-top:26px;padding-top:22px;border-top:1px solid var(--line);font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red)}
+@media(max-width:900px){.insight-grid{grid-template-columns:1fr}.insights{padding:80px 22px}}
+
+</style>
+<style>
+/* --- Track A data-page supplement (Oct 2026) --- */
+.data-page{max-width:860px;margin:0 auto;padding:28px 20px 60px;overflow-wrap:break-word}
+.data-page h1{overflow-wrap:break-word;word-break:break-word}
+.data-page h2{overflow-wrap:break-word;word-break:break-word;margin-top:2.2em}
+.data-page table{width:100%;border-collapse:collapse;margin:1em 0;font-size:15px;line-height:1.5}
+.data-page th,.data-page td{text-align:left;padding:10px 8px;border-bottom:1px solid rgba(128,128,128,.35);vertical-align:top;overflow-wrap:break-word}
+.data-page .trend-up{color:#1a7a3a;font-weight:700;white-space:nowrap}
+.data-page .trend-down{color:#a33;font-weight:700;white-space:nowrap}
+.data-page .trend-base{color:#666;font-weight:700;white-space:nowrap}
+.data-page .stamp{font-size:14px;opacity:.85}
+.data-page .buybox{border:1px solid rgba(128,128,128,.5);padding:18px;margin:2em 0}
+.data-page .buybox a{font-weight:700}
+.data-page .note{font-size:14px;line-height:1.6;opacity:.92}
+.data-page a{overflow-wrap:break-word}
+@media(max-width:480px){.data-page{padding:20px 14px 48px}.data-page table,.data-page tbody,.data-page tr,.data-page td{display:block;width:100%}.data-page thead{display:none}.data-page td{border-bottom:1px solid rgba(128,128,128,.25)}.data-page td:before{content:attr(data-label)": ";font-weight:700}}
+
+/* Phase 1 assembly 2026-10-31 */
+@media (max-width:900px){h1{font-size:clamp(44px,11vw,72px)!important}}
+@media (max-width:900px){.cta .eyebrow2{letter-spacing:.18em!important}}
+@media (max-width:900px){nav{background:rgb(11,59,62)!important;backdrop-filter:none!important}}
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "Medical Claim Denial Rates and Costs",
+  "description": "Aggregated public benchmarks for medical claim denials: initial and final denial rates, write-offs, and revenue leakage.",
+  "temporalCoverage": "2024/2026",
+  "dateModified": "2026-10-31",
+  "creator": {
+    "@type": "Organization",
+    "name": "Prime Domain Capital"
+  },
+  "sourceOrganization": [
+    "https://www.mgma.com",
+    "https://www.aha.org"
+  ],
+  "url": "https://medicaldenials.com/market-data",
+  "license": "https://creativecommons.org/publicdomain/zero/1.0/"
+}
+</script>
+<style>
+/* Mobile rendering fix 2026-10-31: domain H1 lines, stacked nav, header clearance */
+@media (max-width:900px){
+main h1{overflow-wrap:normal!important;word-break:normal!important}
+nav:not(.toc){flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+.topbar{flex-direction:column!important;align-items:flex-start!important;gap:4px!important;padding-top:16px!important;padding-bottom:16px!important;padding-left:20px!important;padding-right:20px!important}
+main{padding-top:120px!important}
+main h1{font-size:clamp(30px,8.5vw,58px)!important;line-height:1.15!important}
+}
+</style>
+</head>
+<body>
+<nav><div class="brand">Prime Domain Capital</div><a href="https://www.afternic.com/domain/medicaldenials.com">Buy Now — $6,888</a></nav>
+<main class="data-page">
+<p class="stamp">Last updated: October 31, 2026</p>
+<h1>What medical claim denials cost providers</h1>
+<p>Denial rates, write-offs, and revenue leakage from Kodiak revenue cycle data, MGMA polls, and hospital association figures.</p>
+<p>A denied claim is not a lost claim, and that distinction is where the money goes. Most denied claims eventually get paid, after rework that costs staff time and delays cash by weeks. The 2026 data carries a twist worth noting: initial denial rates fell in the first half of the year, yet providers still leaked more revenue than the year before, because final denials rose and payers clawed back more payments after the fact. Fewer denials at the front door did not mean more money kept.</p>
+<h2>The figures</h2>
+<table>
+<thead><tr><th>Figure</th><th>Value</th><th>Trend vs prior period</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td data-label="Figure">Initial claim denial rate, hospitals and physicians (Kodiak)</td><td data-label="Value"><strong>11.81% of claims in 2024 (2,100+ hospitals, 300,000+ physicians)</strong></td><td data-label="Trend"><span class="trend-base">● Annual series (see note)</span><br><small>Annual 2024 figure; not part of the half-year series below (12.00% in H1 2025 → 10.63% in H1 2026, Kodiak half-year series, reported by TechTarget)</small></td><td data-label="Source"><a href="https://www.practicefusion.com/blog/claim-denial-reasons/">Kodiak Solutions revenue cycle data (reported by Practice Fusion)</a></td></tr>
+<tr><td data-label="Figure">Initial claim denial rate, half-year comparison (Kodiak)</td><td data-label="Value"><strong>10.63% in H1 2026</strong></td><td data-label="Trend"><span class="trend-down">▼ Down</span><br><small>Prior: 12.00% in H1 2025</small></td><td data-label="Source"><a href="https://www.techtarget.com/revcyclemanagement/news/366651012/Insurers-deny-less-just-to-claw-back-more-later-analysis">Kodiak Solutions revenue cycle data (reported by TechTarget)</a></td></tr>
+<tr><td data-label="Figure">Final denial write-offs as share of net revenue</td><td data-label="Value"><strong>3.07% in H1 2026</strong></td><td data-label="Trend"><span class="trend-down">▼ Down</span><br><small>Prior: 3.31% in H1 2025</small></td><td data-label="Source"><a href="https://www.techtarget.com/revcyclemanagement/news/366651012/Insurers-deny-less-just-to-claw-back-more-later-analysis">Kodiak Solutions revenue cycle data (reported by TechTarget)</a></td></tr>
+<tr><td data-label="Figure">Median final denial rate</td><td data-label="Value"><strong>2.7% (2025)</strong></td><td data-label="Trend"><span class="trend-up">▲ Up</span><br><small>Prior: 2.5% in 2024</small></td><td data-label="Source"><a href="https://www.flobotics.io/blog/claim-denials-in-healthcare-usa">Kodiak Solutions State of the Healthcare Revenue Cycle (reported by Flobotics)</a></td></tr>
+<tr><td data-label="Figure">Net revenue lost to final denials and uncollected balances</td><td data-label="Value"><strong>More than $48 billion (2025)</strong></td><td data-label="Trend"><span class="trend-up">▲ Up</span><br><small>Prior: $38.6 billion in 2024 — a 25% jump in one year</small></td><td data-label="Source"><a href="https://www.flobotics.io/blog/claim-denials-in-healthcare-usa">Kodiak Solutions State of the Healthcare Revenue Cycle (reported by Flobotics)</a></td></tr>
+<tr><td data-label="Figure">Medical group leaders saying denial rates rose vs prior year</td><td data-label="Value"><strong>60% (March 2024 MGMA Stat poll); only 11% said denials fell</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: Poll result for 2024 — no prior-year poll percentage in the cited reporting</small></td><td data-label="Source"><a href="https://www.medicaleconomics.com/view/why-claim-denials-are-rising-and-why-most-practices-are-fixing-the-wrong-problem">Medical Group Management Association Stat poll (reported by Medical Economics)</a></td></tr>
+<tr><td data-label="Figure">Denials and appeals as the top revenue-cycle leak</td><td data-label="Value"><strong>48% of group leaders (January 2026 MGMA poll); front-end issues second at 23%</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: January 2021 poll gave the same 48% figure for denials and appeals — flat across five years on this measure</small></td><td data-label="Source"><a href="https://www.medicaleconomics.com/view/why-claim-denials-are-rising-and-why-most-practices-are-fixing-the-wrong-problem">Medical Group Management Association Stat poll (reported by Medical Economics)</a></td></tr>
+<tr><td data-label="Figure">First-submission denial average, medical groups</td><td data-label="Value"><strong>7–8% averaged over the last four years; achievable target under 5%</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: MGMA-reported average — no single prior-year figure in the cited reporting</small></td><td data-label="Source"><a href="https://humanmedicalbilling.com/blog/reduce-days-in-ar-payer-claim-delays/">Medical Group Management Association (reported by Human Medical Billing)</a></td></tr>
+<tr><td data-label="Figure">Initial denial rate by payer type (AHA data)</td><td data-label="Value"><strong>Medicare Advantage 15.7%; commercial insurers 13.9%</strong></td><td data-label="Trend"><span class="trend-base">● Baseline</span><br><small>Prior: Cross-sectional payer comparison — no prior-period figure in the cited reporting</small></td><td data-label="Source"><a href="https://www.practicefusion.com/blog/claim-denial-reasons/">American Hospital Association data (reported by Practice Fusion)</a></td></tr>
+</tbody>
+</table>
+<h2>How to read these numbers</h2>
+<p>Included: Kodiak Solutions revenue cycle data covering 2,100+ hospitals, MGMA Stat polls of medical group leaders, and American Hospital Association payer figures as reported in trade coverage. Excluded: Change Healthcare's own denial statistics, which could not be verified from a public primary source this session, and vendor marketing claims presented without a sample size. Kodiak figures reach this page through trade reporting of Kodiak's releases, and are labeled as such.</p>
+<p class="note">Disclaimer: Initial denial rates count claims denied on first submission, many of which are later paid; final denial rates count what is ultimately written off. The two must not be added together or compared as if they measured the same thing. Figures on this page are aggregated public estimates assembled for information only. They are not investment advice, legal advice, medical advice, or a professional opinion on any specific case, claim, project, or bottle. Original reporting and the underlying surveys remain the work of the sources linked above; this page summarizes their published figures with attribution and adds no proprietary dataset.</p>
+<div class="buybox">
+<p><strong>medicaldenials.com is offered for sale at $6,888.</strong></p>
+<p><a href="https://www.afternic.com/domain/medicaldenials.com">Buy Now — $6,888 via Afternic</a></p>
+<p>Questions about this domain: <a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></p>
+</div>
+<h2>Changelog</h2>
+<ul><li>October 2026: Initial edition — Kodiak denial-rate series 2024–2026, MGMA poll findings, payer-type denial rates, and revenue-leakage estimates established.</li>
+<li><strong>October 31, 2026:</strong> First row relabeled so the annual 2024 figure is not read as part of the half-year series. No figure changed.</li></ul>
+</main>
+<footer><p>Offered by <strong>Prime Domain Capital</strong> · Private holder selling its own domain assets</p><p><a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></p></footer>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1407571ec8bc45c3a082c91096558135"}'></script>
+<p class="back-home" style="display:block;text-align:center;padding:28px 16px;font-size:15px"><a href="https://medicaldenials.com/" style="color:inherit">&larr; Back to medicaldenials.com</a></p>
+</body>
+</html>
