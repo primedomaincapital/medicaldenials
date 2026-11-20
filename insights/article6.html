@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Denial That Arrives After Payment: How Clawbacks Work | MedicalDenials.com</title>
+<meta name="description" content="A September 2026 OIG audit turned $256,926 in sampled overpayments into a $12.5 million demand. How post-payment audits, extrapolation, and the 30-day recoupment clock actually work.">
+<link rel="canonical" href="https://medicaldenials.com/insights/article6">
+<meta property="og:title" content="The Denial That Arrives After Payment: How Clawbacks Work">
+<meta property="og:description" content="A September 2026 OIG audit turned $256,926 in sampled overpayments into a $12.5 million demand. How post-payment audits, extrapolation, and the 30-day recoupment clock actually work.">
+<meta property="og:url" content="https://medicaldenials.com/insights/article6">
+<meta property="og:image" content="https://medicaldenials.com/images/photo-6234630.jpg">
+<meta property="og:type" content="article">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;family=IBM+Plex+Mono:wght@400;500;600&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"The Denial That Arrives After Payment: How Clawbacks Work","description":"A September 2026 OIG audit turned $256,926 in sampled overpayments into a $12.5 million demand. How post-payment audits, extrapolation, and the 30-day recoupment clock actually work.","author":{"@type":"Organization","name":"Prime Domain Capital"},"datePublished":"2026-11-19","mainEntityOfPage":{"@type":"WebPage","@id":"https://medicaldenials.com/insights/article6"}}</script>
+<style>
+
+:root{--paper:#f7f9fa;--teal:#0b3b3e;--teal2:#0e4a4e;--red:#e5484d;--red-d:#c93a3f;--ink:#10181a;--muted:#5c6f72;--line:#dde6e7}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+::selection{background:var(--red);color:#fff}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:20px 44px;transition:all .4s}
+nav.scrolled{background:rgba(11,59,62,.94);backdrop-filter:blur(12px);padding:13px 44px}
+.brand{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.26em;color:#fff;text-transform:uppercase;text-decoration:none}
+.navlinks{display:flex;gap:32px}
+.navlinks a{color:rgba(255,255,255,.65);text-decoration:none;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;transition:color .3s}
+.navlinks a:hover{color:#fff}
+.navcta{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;background:var(--red);color:#fff;padding:12px 24px;text-decoration:none;text-transform:uppercase;transition:all .3s}
+.navcta:hover{background:var(--red-d);transform:translateY(-1px)}
+@media(max-width:860px){.navlinks{display:none}nav{padding:16px 22px}}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;overflow:hidden;background:var(--teal)}
+.hero-bg{position:absolute;inset:0;background:url('images/photo-36595248.jpg') center/cover no-repeat;opacity:.5}
+.hero-veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,59,62,.96) 20%,rgba(11,59,62,.72) 55%,rgba(11,59,62,.35) 100%)}
+#pulse{position:absolute;left:0;right:0;bottom:0;height:220px;pointer-events:none;z-index:1}
+.hero-inner{position:relative;z-index:2;padding:130px 44px 160px;max-width:1240px;width:100%}
+.alert-strip{display:inline-flex;align-items:center;gap:12px;background:rgba(229,72,77,.14);border:1px solid rgba(229,72,77,.5);padding:10px 18px;margin-bottom:30px}
+.alert-strip .dot{width:8px;height:8px;border-radius:50%;background:var(--red);animation:blink 1.6s infinite}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+.alert-strip span{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#ffb4b7}
+.hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(64px,11vw,168px);line-height:.95;letter-spacing:-.03em;color:#fff}
+.hero h1 .rd{color:var(--red)}
+.hero-sub{max-width:620px;margin-top:30px;color:rgba(255,255,255,.72);font-size:clamp(16px,1.6vw,19px);line-height:1.75}
+.hero-cta{margin-top:42px;display:flex;gap:16px;flex-wrap:wrap}
+.btn-red{background:var(--red);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:19px 42px;text-decoration:none;transition:all .3s;display:inline-block}
+.btn-red:hover{background:#fff;color:var(--teal);transform:translateY(-2px)}
+.btn-line{border:1px solid rgba(255,255,255,.35);color:#fff;font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.16em;text-transform:uppercase;padding:18px 40px;text-decoration:none;transition:all .3s}
+.btn-line:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.hero-ticker{margin-top:56px;display:flex;gap:44px;flex-wrap:wrap}
+.tick .k{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:8px}
+.tick .v{font-family:'Space Grotesk',sans-serif;font-size:34px;font-weight:600;color:#fff}
+.tick .v em{color:var(--red);font-style:normal}
+@media(max-width:860px){.hero-inner{padding:110px 22px 140px}}
+.rv{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.2,.6,.2,1),transform .9s cubic-bezier(.2,.6,.2,1)}
+.rv.in{opacity:1;transform:none}
+.crisis{background:var(--paper);padding:130px 44px}
+.crisis-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:start}
+.sec-tag{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:22px;display:flex;align-items:center;gap:14px}
+.sec-tag::before{content:'';width:38px;height:2px;background:var(--red)}
+.crisis h2{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(34px,4.2vw,56px);line-height:1.1;letter-spacing:-.02em;margin-bottom:28px}
+.crisis p{color:var(--muted);line-height:1.85;font-size:16.5px;margin-bottom:20px}
+.crisis p strong{color:var(--ink);font-weight:600}
+.crisis-img{position:sticky;top:110px}
+.crisis-img img{width:100%;height:520px;object-fit:cover;display:block}
+.crisis-img .frame{border:1px solid var(--line);padding:14px;background:#fff}
+.img-cap{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin-top:18px}
+@media(max-width:960px){.crisis-grid{grid-template-columns:1fr}.crisis{padding:80px 22px}.crisis-img{position:static}.crisis-img img{height:340px}}
+.numbers{background:var(--teal);padding:120px 44px;position:relative;overflow:hidden}
+.numbers-inner{max-width:1240px;margin:0 auto;position:relative;z-index:2}
+.numbers .sec-tag{color:#ffb4b7}.numbers .sec-tag::before{background:var(--red)}
+.numbers h2{font-family:'Space Grotesk',sans-serif;color:#fff;font-weight:600;font-size:clamp(32px,3.8vw,50px);margin-bottom:14px;letter-spacing:-.02em}
+.numbers .sub{color:rgba(255,255,255,.6);max-width:640px;line-height:1.8;margin-bottom:60px}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.card{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.12);padding:44px 36px;transition:all .4s}
+.card:hover{background:rgba(255,255,255,.08);border-color:rgba(229,72,77,.6);transform:translateY(-5px)}
+.card .big{font-family:'Space Grotesk',sans-serif;font-size:clamp(48px,5vw,72px);font-weight:700;color:#fff;line-height:1;margin-bottom:14px}
+.card .big em{color:var(--red);font-style:normal}
+.card .cap{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.55);margin-bottom:16px}
+.card p{color:rgba(255,255,255,.62);font-size:14.5px;line-height:1.75}
+.src{margin-top:34px;font-family:'IBM Plex Mono',monospace;font-size:11px;color:rgba(255,255,255,.4);line-height:1.9;max-width:820px}
+@media(max-width:900px){.cards{grid-template-columns:1fr}.numbers{padding:80px 22px}}
+.strip{display:grid;grid-template-columns:1fr 1fr;height:400px}
+.strip div{background-size:cover;background-position:center}
+.strip .s1{background-image:url('images/photo-10450996.jpg')}
+.strip .s2{background-image:url('images/photo-11288795.jpg')}
+@media(max-width:860px){.strip{grid-template-columns:1fr}.strip div{height:240px}}
+.who{background:var(--paper);padding:130px 44px}
+.who-inner{max-width:1240px;margin:0 auto}
+.who h2{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(34px,4.2vw,56px);letter-spacing:-.02em;margin-bottom:16px}
+.who .sub{color:var(--muted);max-width:640px;line-height:1.8;margin-bottom:60px;font-size:16px}
+.rows{border-top:2px solid var(--ink)}
+.row{display:grid;grid-template-columns:120px 1fr 1fr auto;gap:36px;align-items:center;padding:38px 0;border-bottom:1px solid var(--line);transition:background .3s}
+.row:hover{background:#fff}
+.row .idx{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--red);letter-spacing:.2em}
+.row h3{font-family:'Space Grotesk',sans-serif;font-size:26px;font-weight:600}
+.row p{color:var(--muted);font-size:15px;line-height:1.7}
+.row .tag{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--teal);border:1px solid var(--teal);padding:10px 18px;white-space:nowrap}
+@media(max-width:900px){.row{grid-template-columns:1fr;gap:12px}.who{padding:80px 22px}}
+.cta{background:var(--ink);padding:150px 44px;text-align:center;position:relative;overflow:hidden}
+.cta-bg{position:absolute;inset:0;background:url('images/photo-127873.jpg') center/cover;opacity:.22}
+.cta-inner{position:relative;z-index:2;max-width:780px;margin:0 auto}
+.cta .eyebrow2{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--red);margin-bottom:22px}
+.cta h2{font-family:'Space Grotesk',sans-serif;color:#fff;font-weight:700;font-size:clamp(38px,5.2vw,68px);line-height:1.05;letter-spacing:-.02em;margin-bottom:18px}
+.cta .price{font-family:'Space Grotesk',sans-serif;font-size:clamp(60px,7.5vw,100px);font-weight:700;color:#fff;margin:28px 0 6px}
+.cta .pnote{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:40px}
+.cta p.lead{color:rgba(255,255,255,.62);line-height:1.85;max-width:600px;margin:0 auto 40px}
+.trust{display:flex;justify-content:center;gap:36px;margin-top:48px;flex-wrap:wrap}
+.trust span{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.45)}
+.trust a{color:rgba(255,255,255,.7);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+@media(max-width:860px){.cta{padding:100px 22px}}
+footer{background:var(--ink);border-top:1px solid rgba(255,255,255,.1);padding:54px 44px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:22px}
+footer .fb{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.26em;text-transform:uppercase;color:#fff}
+footer p{color:rgba(255,255,255,.4);font-size:13px;line-height:1.8}
+footer a{color:rgba(255,255,255,.65);text-decoration:none;border-bottom:1px solid rgba(255,255,255,.25)}
+@media(max-width:860px){footer{padding:40px 22px}}
+
+
+.art-hero{position:relative;background:var(--teal);padding:190px 44px 120px;overflow:hidden}
+.art-hero-bg{position:absolute;inset:0;background:url('../images/photo-36595248.jpg') center/cover no-repeat;opacity:.28}
+.art-hero-veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(11,59,62,.96) 20%,rgba(11,59,62,.7) 60%,rgba(11,59,62,.4) 100%)}
+#apulse{position:absolute;left:0;right:0;bottom:0;height:130px;pointer-events:none;z-index:1}
+.art-hero-inner{position:relative;z-index:2;max-width:1000px}
+.crumb{font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:28px}
+.crumb a{color:#ffb4b7;text-decoration:none}
+.art-tag{display:inline-flex;align-items:center;gap:12px;background:rgba(229,72,77,.14);border:1px solid rgba(229,72,77,.5);padding:10px 18px;margin-bottom:30px}
+.art-tag span{font-family:'IBM Plex Mono',monospace;font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:#ffb4b7}
+.art-hero h1{font-family:'Space Grotesk',sans-serif;font-weight:700;font-size:clamp(40px,5.4vw,76px);line-height:1.02;letter-spacing:-.025em;color:#fff}
+.dek{max-width:720px;margin-top:28px;color:rgba(255,255,255,.72);font-size:clamp(16px,1.6vw,19px);line-height:1.75}
+.byline{margin-top:36px;display:flex;gap:20px;align-items:center;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5);flex-wrap:wrap}
+.byline .bname{color:#ffb4b7}
+.art-wrap{background:var(--paper);padding:90px 44px 110px}
+.art-body{max-width:800px;margin:0 auto}
+.art-body>p:first-of-type{font-size:19.5px;color:var(--ink);line-height:1.8}
+.art-body p{color:#43575a;line-height:1.9;font-size:17px;margin-bottom:26px}
+.art-body p strong{color:var(--ink);font-weight:600}
+.art-body h2{font-family:'Space Grotesk',sans-serif;font-weight:600;font-size:clamp(28px,3.2vw,42px);line-height:1.12;letter-spacing:-.02em;color:var(--ink);margin:70px 0 26px}
+.art-body blockquote.pull{margin:60px 0;padding:8px 0 8px 32px;border-left:3px solid var(--red);font-family:'Space Grotesk',sans-serif;font-weight:500;font-size:clamp(22px,2.4vw,30px);line-height:1.4;color:var(--teal)}
+.sibnav{max-width:800px;margin:80px auto 0;border-top:2px solid var(--ink);padding-top:36px;display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.sibnav a{font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .3s;max-width:46%}
+.sibnav a:hover{color:var(--red)}
+.sibnav .next{text-align:right}
+@media(max-width:860px){.art-hero{padding:150px 22px 100px}.art-wrap{padding:60px 22px 80px}.sibnav a{max-width:100%}}
+
+</style>
+</head>
+<body>
+
+<nav id="nav">
+  <a class="brand" href="../index.html">Prime Domain Capital</a>
+  <div class="navlinks">
+    <a href="../index.html#crisis">The Crisis</a>
+    <a href="../index.html#numbers">The Data</a>
+    <a href="../index.html#who">Who It's For</a>
+      <a href="../index.html#insights">Insights</a>
+  </div>
+  <a class="navcta" href="https://www.afternic.com/domain/medicaldenials.com">Acquire — $6,888</a>
+</nav>
+
+<header class="art-hero">
+  <div class="art-hero-bg"></div>
+  <div class="art-hero-veil"></div>
+  <canvas id="apulse"></canvas>
+  <div class="art-hero-inner">
+    <div class="crumb"><a href="../index.html">Home</a>  /  <a href="../index.html#insights">Insights</a></div>
+    <div class="art-tag"><span>Prime Domain Capital Insights</span></div>
+    <h1>The Denial That Arrives After Payment: How Clawbacks Work</h1>
+    <p class="dek">A paid claim is not a closed claim. Post-payment audits, statistical extrapolation, and a 30-day clock can turn a six-figure sample finding into an eight-figure demand.</p>
+    <div class="byline"><span class="bname">Prime Domain Capital Insights</span><i></i><span>November 20, 2026</span></div>
+  </div>
+</header>
+
+<main class="art-wrap">
+  <article class="art-body rv">
+<p>The payment landed in March, clean and on time, and the hospital spent it the way hospitals spend everything: on payroll, on supplies, on the next month's obligations. The audit letter arrived in September. It did not ask a question. It stated a conclusion — that 27 of 100 sampled claims had not complied with Medicare billing requirements — and it named a number: $256,926 in net overpayments on $1,426,020 reviewed. Then came the sentence that changes the arithmetic entirely. Using statistical extrapolation, the auditors estimated the hospital owed at least $12.4 million on the $62 million Medicare had paid it across the audit period. A six-figure sample finding had become an eight-figure demand, and the money was already gone.</p>
+<p>That is a clawback, and it is the denial that arrives after the denial never happened. The claim was paid. The service was delivered. Months or years later, a payer — Medicare, a Medicare Advantage plan, a Medicaid program, or a commercial insurer — reviews the payment, finds it wanting, and takes the money back. The hospital's choices at that point are narrow: repay, appeal, or negotiate, and the clock on all three starts the day the demand letter arrives, not the day anyone feels ready.</p>
+<p>The September 2026 audit that produced those numbers is worth reading closely, because it shows how the machinery works. The Department of Health and Human Services' Office of Inspector General examined Methodist Hospital in San Antonio, Texas, reviewing 100 inpatient and outpatient claims from 2020 and 2021. Seventy-three complied. Twenty-seven did not, producing $256,926 in net overpayments. The auditors then extrapolated across 6,625 claims in the identified high-risk categories, worth $62,048,673, and recommended a refund of $12,499,714 — the lower limit of a two-sided 90 percent confidence interval. The hospital disputed much of it, including the rehabilitation findings and the extrapolation itself, and the auditors cut the recommendation by $955,627 after removing two disputed claims. The final number is still $12.5 million, and the hospital's disagreement does not stop the recoupment clock.</p>
+<h2>The audit machine: who comes for the money</h2>
+<p>Four different kinds of auditor can initiate a clawback, and a hospital of any size will meet all of them eventually. Recovery Audit Contractors, the RACs, work on contingency and review paid claims for improper payments; in the program's three-year pilot, 85 percent of the overpayments collected came from inpatient hospital providers, according to the Centers for Medicare and Medicaid Services' own evaluation, which reported $693.6 million returned to the Medicare Trust Funds between 2005 and March 2008. Unified Program Integrity Contractors investigate suspected fraud and abuse. The OIG runs the targeted hospital audits like the Methodist review, selecting hospitals whose claims data shows disproportionate volume in areas previously associated with billing errors — inpatient rehabilitation, selected diagnosis-related groups, mechanical ventilation, severe malnutrition, same-day discharge and readmission. And commercial payers run their own post-payment audits under the audit rights buried in their provider contracts.</p>
+<p>The Medicare Advantage audits show what happens when the same machinery is pointed at the big plans' own payments. In 2025, OIG audits found Humana owed $130.9 million and UnitedHealthcare $46.9 million in overpayments to the Medicare program — $177.8 million combined — with error rates of 81 percent and 73 percent respectively on the sampled claims. Those are plan overpayments, not hospital clawbacks, but they explain the pressure hospitals feel: when a plan is told it was overpaid by nine figures, its own post-payment audits of providers get sharper, faster, and less forgiving.</p>
+<p>Medicaid has its own version. A February 2026 follow-up audit by the New York State Comptroller found $52.2 million in recoveries that the state's contractor, Gainwell Technologies, had identified but never billed — third-party liability amounts sitting uncollected because nobody sent the invoice. Gainwell's files held another $39.3 million in inpatient claims stuck in unresolved status, waiting on carriers or providers that never responded. The money was found, not lost, but the episode shows the same pattern from the other side: post-payment review is a permanent feature of the system now, and the amounts it surfaces are large enough to matter to any hospital's balance sheet.</p>
+<h2>What a clawback costs beyond the refund</h2>
+<p>The refund is the smallest part of the bill. A hospital that receives a demand letter must first decide whether to appeal, and that decision has a deadline measured in days: a provider generally has 30 days from the demand letter to file a redetermination request that stops recoupment, and recoupment begins on day 41 if no valid appeal is filed. The appeal itself runs through the five-level Medicare process — redetermination within 120 days, reconsideration within 180 days, an Administrative Law Judge hearing with a $200 minimum amount in controversy — and each level consumes staff time, medical records work, and, for larger amounts, outside counsel.</p>
+<p>Then there is the multiplier. The Methodist audit is the clearest public example: $256,926 in sampled overpayments became a $12.5 million recommended refund, a multiple of roughly 48 times. That is how statistical extrapolation works — a 27 percent error rate in a sample is projected across the full universe of similar claims — and it is why the sample selection matters more than the sample size. The risk areas in the Methodist audit were not random: rehabilitation claims accounted for $247,457 of the $256,926 in sampled overpayments, 96.3 percent of the total. A hospital whose rehabilitation documentation is weak does not have a $250,000 problem. It has a problem measured against every rehabilitation claim it billed in the period.</p>
+<p>Interest accrues on top. Once the demand letter issues, the clock runs, and an unsuccessful appeal leaves the hospital paying the principal plus interest for the months the dispute consumed. The rational response is not to fight every clawback — it is to know, before the letter arrives, which claims in the current billing stream would fail the same review.</p>
+<h2>The counterargument: the payers have a case</h2>
+<p>None of this means the audits are illegitimate. In calendar year 2021, Medicare paid hospitals $182 billion, 46 percent of all fee-for-service payments, and the OIG's stated reason for the hospital audit series is straightforward: that much money requires that payments comply with requirements. The Methodist findings were not exotic. They included disputed rehabilitation medical-necessity determinations, unsupported diagnosis and procedure codes, unsupported outlier billing, an incorrect discharge-status code, and unsupported outpatient coding. The OIG's conclusion was that the errors occurred primarily because hospital staff did not consistently follow the hospital's own written policies and procedures.</p>
+<p>The hospital's own dispute is also instructive. Methodist challenged 14 draft error claims and won two of them, cutting the recommendation by nearly a million dollars. The extrapolation, the rehabilitation medical-necessity judgments, and the reopening positions remain contested. A clawback demand is an auditor's conclusion, not a verdict, and the appeals process exists precisely because auditors get claims wrong. The problem for hospitals is not that audits happen. It is that the audit arrives years after the care, when the clinicians have moved on, the documentation is what it is, and the money is spent.</p>
+<h2>What the defense actually looks like</h2>
+<p>The hospitals that survive clawbacks cheapest are the ones that audit themselves first, on the same risk areas the OIG publishes. The Methodist report names its targets openly: inpatient rehabilitation, selected DRGs, mechanical ventilation, severe malnutrition, same-day discharge and readmission, resumption of home health, and certain outpatient billing patterns. A hospital that runs its own sample across those categories, finds its own error rate, and fixes the documentation before the payer arrives has converted a $12.5 million surprise into a training expense.</p>
+<p>The second discipline is speed. The 30-day window to stop recoupment is short, and it is the single most valuable deadline in the revenue cycle — worth more than any appeal argument, because it preserves cash while the argument is made. The third is statistical literacy: when an extrapolated demand arrives, the hospital's first question should not be whether the sample was wrong, but whether the sampling frame was fair, because that is where the multiplier lives or dies.</p>
+<p>Clawbacks will not shrink. Improper-payment recovery is one of the few cost-control tools that pays for itself, the audit programs are expanding, and the data analytics that select audit targets get better every year. The hospitals that treat post-payment review as a when, not an if — and build the audit, the appeal calendar, and the documentation discipline around that assumption — are the ones that keep the money they were paid. The rest will keep learning about it in September, for services delivered in March, with interest.</p>
+<p><em>The definitive source for medical denial intelligence is still up for grabs. MedicalDenials.com is available for acquisition by the company that will own this category — inquiries to info@primedomaincapital.com.</em></p>
+<h2>Sources</h2>
+<p><a href="https://oig.hhs.gov/reports/all/2026/methodist-hospital-received-at-least-124-million-in-medicare-overpayments/">Methodist Hospital Received at Least $12.4 Million in Medicare Overpayments</a> — HHS Office of Inspector General, September 2026 (Audit A-09-23-03001)</p>
+<p><a href="https://www.jdsupra.com/legalnews/how-oig-used-data-analytics-and-1348804/">How OIG Used Data Analytics and Extrapolation in a $12.4 Million Hospital Audit</a> — JD Supra / Butler Snow, October 2026</p>
+<p><a href="https://www.cms.gov/newsroom/press-releases/new-report-shows-cms-pilot-program-saving-nearly-700-million-improper-medicare-payments">New Report Shows CMS Pilot Program Saving Nearly $700 Million in Improper Medicare Payments</a> — Centers for Medicare and Medicaid Services, 2008 (RAC pilot: 85 percent of overpayments from inpatient hospitals)</p>
+<p><a href="https://www.osc.ny.gov/state-agencies/audits/2026/02/26/recovering-managed-care-payments-inpatient-services-behalf-recipients-third-party-health">Recovering Managed Care Payments for Inpatient Services on Behalf of Recipients With Third-Party Health Insurance (Follow-Up)</a> — Office of the New York State Comptroller, February 2026 (Gainwell: $52.2 million unbilled)</p>
+<p><a href="https://www.doctorsmanagement.com/blog/five-levels-of-medicare-appeals/">The Five Levels of Medicare Appeals: A Provider's Guide to Redetermination Through Judicial Review</a> — DoctorsManagement, 2026 (recoupment day 41; 30-day appeal window)</p>
+
+</article>
+    <nav class="sibnav">
+<a href="article5.html">&larr; Medicare Advantage's Denial Gap: What the June 2026 OIG Reports Actually Found</a>
+<a class="next" href="article7.html">Next: How Long a Claim Appeal Takes, by Payer &rarr;</a>
+  </nav>
+</main>
+
+<section class="cta">
+  <div class="cta-bg"></div>
+  <div class="cta-inner rv">
+    <div class="eyebrow2">Available for Acquisition</div>
+    <h2>The name of the problem<br>is the most valuable name in it.</h2>
+    <div class="price">$6,888</div>
+    <div class="pnote">Fixed price · Buy Now · No auction</div>
+    <p class="lead">Offered by Prime Domain Capital. Transfer closes through Escrow.com — funds verified before the domain moves. Inquiries held in strict confidence.</p>
+    <a class="btn-red" href="https://www.afternic.com/domain/medicaldenials.com">Buy Now on Afternic</a>
+    <div class="trust">
+      <span>Escrow.com secured</span>
+      <span>Confidential inquiry</span>
+      <span><a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></span>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>
+    <div class="fb">Prime Domain Capital</div>
+    <p style="margin-top:10px">A private holder of category-defining domain assets.</p>
+  </div>
+  <p>MedicalDenials.com · Offered at a fixed price of $6,888 USD<br>Contact: <a href="mailto:info@primedomaincapital.com">info@primedomaincapital.com</a></p>
+</footer>
+
+<script>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>300)},{passive:true});
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+(function(){
+  const c=document.getElementById('apulse'),x=c.getContext('2d');let W,H;
+  function rs(){W=c.width=c.offsetWidth;H=c.height=c.offsetHeight}
+  rs();addEventListener('resize',rs);
+  const RED='#e5484d',TEAL='rgba(255,255,255,.22)';
+  function yBeat(px){
+    const p=(px%220)/220;
+    if(p<.12)return 0;
+    if(p<.16)return -14*((p-.12)/.04);
+    if(p<.2)return -14+30*((p-.16)/.04);
+    if(p<.26)return 16-46*((p-.2)/.06);
+    if(p<.3)return -30+30*((p-.26)/.04);
+    if(p<.44)return 0;
+    if(p<.56)return -10*Math.sin((p-.44)/.12*Math.PI);
+    return 0;
+  }
+  let off=0;
+  (function loop(){
+    off+=2.4;
+    x.clearRect(0,0,W,H);
+    const mid=H*0.45;
+    x.beginPath();
+    for(let px=0;px<W;px+=3){
+      const yy=mid+yBeat(px+off)*1.1;
+      px===0?x.moveTo(px,yy):x.lineTo(px,yy);
+    }
+    x.strokeStyle=TEAL;x.lineWidth=2;x.stroke();
+    const lx=W*0.72;
+    x.beginPath();
+    for(let px=lx-160;px<lx;px+=3){
+      const yy=mid+yBeat(px+off)*1.1;
+      px<=lx-160?x.moveTo(px,yy):x.lineTo(px,yy);
+    }
+    x.strokeStyle=RED;x.lineWidth=3;
+    x.shadowColor=RED;x.shadowBlur=14;x.stroke();x.shadowBlur=0;
+    const dy=mid+yBeat(lx+off)*1.1;
+    const pr=5+3*Math.abs(Math.sin(Date.now()/280));
+    x.beginPath();x.arc(lx,dy,pr,0,6.28);
+    x.fillStyle=RED;x.shadowColor=RED;x.shadowBlur=20;x.fill();x.shadowBlur=0;
+    requestAnimationFrame(loop);
+  })();
+})();
+</script>
+<!-- Cloudflare Web Analytics --><script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "1407571ec8bc45c3a082c91096558135"}'></script><!-- End Cloudflare Web Analytics -->
+</body>
+</html>
